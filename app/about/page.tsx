@@ -1,7 +1,6 @@
 
 import styled from "styled-components";
 import getData from "@/get/getData";
-import {fontWeight} from "@mui/system";
 
 const StyledDiv = styled.div`
     min-width:100vw;
