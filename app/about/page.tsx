@@ -23,7 +23,7 @@ export default async function Home() {
     console.log(data.length);
     return (
         <StyledDiv>
-            {data.slice(0, 1).map((item) => (
+            {data.slice(0, 1).map((item:any) => (
                 <>
                     <StyledCard>
                         <div key={item.id} className="card">
@@ -36,7 +36,7 @@ export default async function Home() {
                             <p>Family: {item.family.name}</p>
 
                             <div>
-                                {item.thumbnails.map((thumb, index) => (
+                                {item.thumbnails.map((thumb:any, index:any) => (
                                     <img
                                         key={index}
                                         src={thumb.url}
